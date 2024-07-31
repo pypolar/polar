@@ -1,0 +1,37 @@
+#    Byte-compiled / optimized / DLL files
+**/__pycache__/
+**/.ipynb_checkpoints/
+*.py[cod]
+*.pyc
+*.pyo
+*.so
+
+# Mkdocs
+build/
+site/
+
+# pip package
+dist/
+*.egg-info/
+
+# Vscode
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+
+# Data not intended for deployment
+# **notebooks**
+**logs**
+modelnet
+**DEV**.ipynb
+train_ae.py
+
+
+# Test & Backups
+*test*.py
+**test**

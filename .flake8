@@ -1,0 +1,6 @@
+[flake8]
+max-line-length = 120
+per-file-ignores = __init__.py: F401
+per-file-ignores = so3.py: E501
+ignore = W605, E203, E226, E304, E241, E306, E731, E741, E402
+

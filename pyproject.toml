@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polar"
+dependencies = [
+  "numpy",
+  "pytorch3d",
+  "torch",
+  "torch_geometric",
+  "tqdm",
+  "typing-extensions ; python_version < '3.10'"
+]
+dynamic = ["version"]
+authors = [
+  { name="Luc Vedrenne", email="vedrenne@unistra.fr" },
+]
+description = "POLAR package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+train = [
+  "h5py",
+  "toml"
+]
+viz = [
+  "plotly"
+]
+all = [
+  "polar[train]",
+  "polar[vis]",
+]
+
+[project.urls]
+Repository = "https://github.com/pypolar/polar.git"
+
+
+[tool.setuptools]
+py-modules = ["polar"]
+
+[tool.setuptools_scm]
+write_to = "polar/_version.py"
