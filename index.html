@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#point-cloud-latent-registration" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting started
+              POint cloud LAtent Registration
             
           </span>
         </div>
@@ -274,74 +274,15 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Getting started
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Getting started
+    POint cloud LAtent Registration
   </span>
   
 
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#minimal-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Minimal example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documentation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -839,41 +780,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#minimal-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Minimal example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documentation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -887,20 +793,25 @@
                   
 
 
+<h1 id="point-cloud-latent-registration">POint cloud LAtent Registration<a class="headerlink" href="#point-cloud-latent-registration" title="Permanent link">¤</a></h1>
 <h1 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">¤</a></h1>
 <p>POLAR is a method to simultaneously register numerous highly degraded point clouds corresponding to views of the same unknown reference object.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">¤</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>PyTorch3D is required by POLAR. Since its installation is quite specific, you need to install it manually.</p>
+</div>
 <p>If you want to user POLAR with the provided pretrained autoencoder, run
-<div class="highlight"><pre><span></span><code>pip install polar
+<div class="highlight"><pre><span></span><code>pip install polaregistration
 </code></pre></div></p>
 <p>If you want to retrain the autoencoder on your own, run
-<div class="highlight"><pre><span></span><code>pip install polar[train]
+<div class="highlight"><pre><span></span><code>pip install polaregistration[train]
 </code></pre></div></p>
 <p>If you want to use the interactive visualization function, run
-<div class="highlight"><pre><span></span><code>pip install polar[vis]
+<div class="highlight"><pre><span></span><code>pip install polaregistration[vis]
 </code></pre></div></p>
 <p>Finally, to install everything, run
-<div class="highlight"><pre><span></span><code>pip install polar[all]
+<div class="highlight"><pre><span></span><code>pip install polaregistration[all]
 </code></pre></div></p>
 <h2 id="minimal-example">Minimal example<a class="headerlink" href="#minimal-example" title="Permanent link">¤</a></h2>
 <p><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">polar</span> <span class="kn">import</span> <span class="n">load_sample_data</span><span class="p">,</span> <span class="n">POLAR</span>
@@ -917,8 +828,6 @@ POLAR partially respects the <a href="https://scikit-learn.org/stable/modules/ge
 </ul>
 <p>They take a list of PyTorch tensors (each of shape <span class="arithmatex">\((K_i, 3)\)</span> if point clouds are of varying lengths) or a single batch tensor of shape
 <span class="arithmatex">\((N, K, 3)\)</span> containing all the (same length) views.</p>
-<h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">¤</a></h2>
-<p>A documentation, containing full api reference as well as small showcases is available <a href="https://spfluosmlm.github.io/Alto/">here</a>.</p>
 
 
 

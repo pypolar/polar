@@ -271,7 +271,7 @@
         
   
   <span class="md-ellipsis">
-    Getting started
+    POint cloud LAtent Registration
   </span>
   
 
@@ -656,7 +656,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#polar.train.data.transforms.core.Transform" class="md-nav__link">
+  <a href="#src.polar.train.data.transforms.core.Transform" class="md-nav__link">
     <span class="md-ellipsis">
       Transform
     </span>
@@ -665,7 +665,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#polar.train.data.transforms.core.Compose" class="md-nav__link">
+  <a href="#src.polar.train.data.transforms.core.Compose" class="md-nav__link">
     <span class="md-ellipsis">
       Compose
     </span>
@@ -839,7 +839,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#polar.train.data.transforms.core.Transform" class="md-nav__link">
+  <a href="#src.polar.train.data.transforms.core.Transform" class="md-nav__link">
     <span class="md-ellipsis">
       Transform
     </span>
@@ -848,7 +848,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#polar.train.data.transforms.core.Compose" class="md-nav__link">
+  <a href="#src.polar.train.data.transforms.core.Compose" class="md-nav__link">
     <span class="md-ellipsis">
       Compose
     </span>
@@ -878,10 +878,10 @@
 
 
 
-<h4 id="polar.train.data.transforms.core.Transform" class="doc doc-heading">
+<h4 id="src.polar.train.data.transforms.core.Transform" class="doc doc-heading">
               <code class="highlight language-python"><span class="n">Transform</span><span class="p">(</span><span class="n">p</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">)</span></code>
 
-<a href="#polar.train.data.transforms.core.Transform" class="headerlink" title="Permanent link">¤</a></h4>
+<a href="#src.polar.train.data.transforms.core.Transform" class="headerlink" title="Permanent link">¤</a></h4>
 
 
     <div class="doc doc-contents first">
@@ -895,7 +895,7 @@ points clouds. If multiple point clouds are passed, they MUST all have the same 
 Any Transform is applied with a provided probability <code>self.p</code>.</p>
 
                   <details class="quote">
-                    <summary>Source code in <code>polar/train/data/transforms/core.py</code></summary>
+                    <summary>Source code in <code>src/polar/train/data/transforms/core.py</code></summary>
                     <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">16</span>
 <span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">p</span> <span class="o">=</span> <span class="n">p</span>
@@ -917,14 +917,14 @@ Any Transform is applied with a provided probability <code>self.p</code>.</p>
 <div class="doc doc-object doc-function">
 
 
-<h5 id="polar.train.data.transforms.core.Transform.get_batch_size" class="doc doc-heading">
+<h5 id="src.polar.train.data.transforms.core.Transform.get_batch_size" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">get_batch_size</span><span class="p">(</span><span class="o">**</span><span class="n">data</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
   </span>
 
-<a href="#polar.train.data.transforms.core.Transform.get_batch_size" class="headerlink" title="Permanent link">¤</a></h5>
+<a href="#src.polar.train.data.transforms.core.Transform.get_batch_size" class="headerlink" title="Permanent link">¤</a></h5>
 
 
     <div class="doc doc-contents ">
@@ -932,7 +932,7 @@ Any Transform is applied with a provided probability <code>self.p</code>.</p>
       <p>Static method. Assume every values in data dict is of same shape.</p>
 
             <details class="quote">
-              <summary>Source code in <code>polar/train/data/transforms/core.py</code></summary>
+              <summary>Source code in <code>src/polar/train/data/transforms/core.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">19</span>
 <span class="normal">20</span>
 <span class="normal">21</span>
@@ -949,14 +949,14 @@ Any Transform is applied with a provided probability <code>self.p</code>.</p>
 <div class="doc doc-object doc-function">
 
 
-<h5 id="polar.train.data.transforms.core.Transform.get_num_points" class="doc doc-heading">
+<h5 id="src.polar.train.data.transforms.core.Transform.get_num_points" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">get_num_points</span><span class="p">(</span><span class="o">**</span><span class="n">data</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
   </span>
 
-<a href="#polar.train.data.transforms.core.Transform.get_num_points" class="headerlink" title="Permanent link">¤</a></h5>
+<a href="#src.polar.train.data.transforms.core.Transform.get_num_points" class="headerlink" title="Permanent link">¤</a></h5>
 
 
     <div class="doc doc-contents ">
@@ -964,7 +964,7 @@ Any Transform is applied with a provided probability <code>self.p</code>.</p>
       <p>Static method. Assume every values in data dict is of same shape.</p>
 
             <details class="quote">
-              <summary>Source code in <code>polar/train/data/transforms/core.py</code></summary>
+              <summary>Source code in <code>src/polar/train/data/transforms/core.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">24</span>
 <span class="normal">25</span>
 <span class="normal">26</span>
@@ -981,10 +981,10 @@ Any Transform is applied with a provided probability <code>self.p</code>.</p>
 <div class="doc doc-object doc-function">
 
 
-<h5 id="polar.train.data.transforms.core.Transform.get_params" class="doc doc-heading">
+<h5 id="src.polar.train.data.transforms.core.Transform.get_params" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">get_params</span><span class="p">(</span><span class="o">**</span><span class="n">data</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
 
-<a href="#polar.train.data.transforms.core.Transform.get_params" class="headerlink" title="Permanent link">¤</a></h5>
+<a href="#src.polar.train.data.transforms.core.Transform.get_params" class="headerlink" title="Permanent link">¤</a></h5>
 
 
     <div class="doc doc-contents ">
@@ -1021,7 +1021,7 @@ Any Transform is applied with a provided probability <code>self.p</code>.</p>
     </ul>
 
             <details class="quote">
-              <summary>Source code in <code>polar/train/data/transforms/core.py</code></summary>
+              <summary>Source code in <code>src/polar/train/data/transforms/core.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">32</span>
 <span class="normal">33</span>
 <span class="normal">34</span>
@@ -1054,10 +1054,10 @@ Any Transform is applied with a provided probability <code>self.p</code>.</p>
 <div class="doc doc-object doc-function">
 
 
-<h5 id="polar.train.data.transforms.core.Transform.apply" class="doc doc-heading">
+<h5 id="src.polar.train.data.transforms.core.Transform.apply" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">apply</span><span class="p">(</span><span class="n">pointclouds</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="o">**</span><span class="n">params</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span></code>
 
-<a href="#polar.train.data.transforms.core.Transform.apply" class="headerlink" title="Permanent link">¤</a></h5>
+<a href="#src.polar.train.data.transforms.core.Transform.apply" class="headerlink" title="Permanent link">¤</a></h5>
 
 
     <div class="doc doc-contents ">
@@ -1083,7 +1083,7 @@ Any Transform is applied with a provided probability <code>self.p</code>.</p>
                         num_points, *)</code> where <code>*</code> denotes spatial coordinates.</p>
 
             <details class="quote">
-              <summary>Source code in <code>polar/train/data/transforms/core.py</code></summary>
+              <summary>Source code in <code>src/polar/train/data/transforms/core.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">45</span>
 <span class="normal">46</span>
 <span class="normal">47</span>
@@ -1116,10 +1116,10 @@ Any Transform is applied with a provided probability <code>self.p</code>.</p>
 <div class="doc doc-object doc-function">
 
 
-<h5 id="polar.train.data.transforms.core.Transform.__call__" class="doc doc-heading">
+<h5 id="src.polar.train.data.transforms.core.Transform.__call__" class="doc doc-heading">
             <code class="highlight language-python"><span class="fm">__call__</span><span class="p">(</span><span class="o">**</span><span class="n">data</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Tensor</span><span class="p">]</span></code>
 
-<a href="#polar.train.data.transforms.core.Transform.__call__" class="headerlink" title="Permanent link">¤</a></h5>
+<a href="#src.polar.train.data.transforms.core.Transform.__call__" class="headerlink" title="Permanent link">¤</a></h5>
 
 
     <div class="doc doc-contents ">
@@ -1141,7 +1141,7 @@ Any Transform is applied with a provided probability <code>self.p</code>.</p>
     </ul>
 
             <details class="quote">
-              <summary>Source code in <code>polar/train/data/transforms/core.py</code></summary>
+              <summary>Source code in <code>src/polar/train/data/transforms/core.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">58</span>
 <span class="normal">59</span>
 <span class="normal">60</span>
@@ -1187,15 +1187,15 @@ Any Transform is applied with a provided probability <code>self.p</code>.</p>
 
 
 
-<h4 id="polar.train.data.transforms.core.Compose" class="doc doc-heading">
+<h4 id="src.polar.train.data.transforms.core.Compose" class="doc doc-heading">
               <code class="highlight language-python"><span class="n">Compose</span><span class="p">(</span><span class="n">transforms</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">Transform</span><span class="p">],</span> <span class="n">p</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">)</span></code>
 
-<a href="#polar.train.data.transforms.core.Compose" class="headerlink" title="Permanent link">¤</a></h4>
+<a href="#src.polar.train.data.transforms.core.Compose" class="headerlink" title="Permanent link">¤</a></h4>
 
 
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code><a class="autorefs autorefs-internal" title="polar.train.data.transforms.core.Transform" href="#polar.train.data.transforms.core.Transform">Transform</a></code></p>
+              Bases: <code><a class="autorefs autorefs-internal" title="src.polar.train.data.transforms.core.Transform" href="#src.polar.train.data.transforms.core.Transform">Transform</a></code></p>
 
 
       <p>Very simple mechanism to chain Transforms.
@@ -1216,7 +1216,7 @@ during training.</p>
     <ul>
         <li class="doc-section-item field-body">
           <b><code>transforms</code></b>
-              (<code><span title="typing.Sequence">Sequence</span>[<a class="autorefs autorefs-internal" title="polar.train.data.transforms.core.Transform" href="#polar.train.data.transforms.core.Transform">Transform</a>]</code>)
+              (<code><span title="typing.Sequence">Sequence</span>[<a class="autorefs autorefs-internal" title="src.polar.train.data.transforms.core.Transform" href="#src.polar.train.data.transforms.core.Transform">Transform</a>]</code>)
           –
           <div class="doc-md-description">
             <p>Transformations to be randomly composed during a
@@ -1236,7 +1236,7 @@ during training.</p>
     </ul>
 
                   <details class="quote">
-                    <summary>Source code in <code>polar/train/data/transforms/core.py</code></summary>
+                    <summary>Source code in <code>src/polar/train/data/transforms/core.py</code></summary>
                     <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">89</span>
 <span class="normal">90</span>
 <span class="normal">91</span>
