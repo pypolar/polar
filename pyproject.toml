@@ -8,7 +8,6 @@ name = "polaregistration"
 version = "0.1.0"
 dependencies = [
   "numpy",
-  "pytorch3d",
   "torch",
   "torch_geometric",
   "tqdm",
