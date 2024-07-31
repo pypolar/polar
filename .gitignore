@@ -30,7 +30,7 @@ dist/
 modelnet
 **DEV**.ipynb
 train_ae.py
-
+polar-*
 
 # Test & Backups
 *test*.py
