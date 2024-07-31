@@ -50,4 +50,4 @@ $(N, K, 3)$ containing all the (same length) views.
 
 ## Documentation
 
-A documentation, containing full api reference as well as small showcases is available [here](https://spfluosmlm.github.io/Alto/).
+A documentation, containing full api reference as well as small showcases is available [here](https://pypolar.github.io/polar/).

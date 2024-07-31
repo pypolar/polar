@@ -44,10 +44,3 @@ POLAR partially respects the [Scikit-Learn Estimator API](https://scikit-learn.o
 
 They take a list of PyTorch tensors (each of shape $(K_i, 3)$ if point clouds are of varying lengths) or a single batch tensor of shape
 $(N, K, 3)$ containing all the (same length) views.
-
-
-
-
-## Documentation
-
-A documentation, containing full api reference as well as small showcases is available [here](https://spfluosmlm.github.io/Alto/).
