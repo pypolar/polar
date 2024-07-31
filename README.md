@@ -6,6 +6,9 @@ POLAR is a method to simultaneously register numerous highly degraded point clou
 
 ## Installation
 
+> [!WARNING]
+> PyTorch3D is required by POLAR. Since its installation is quite specific, you need to install it manually.
+
 If you want to user POLAR with the provided pretrained autoencoder, run
 ```
 pip install polaregistration
