@@ -1,3 +1,5 @@
+# POint cloud LAtent Registration
+
 # Getting started
 
 POLAR is a method to simultaneously register numerous highly degraded point clouds corresponding to views of the same unknown reference object.
@@ -6,24 +8,23 @@ POLAR is a method to simultaneously register numerous highly degraded point clou
 
 If you want to user POLAR with the provided pretrained autoencoder, run
 ```
-pip install polar
+pip install polaregistration
 ```
 
 If you want to retrain the autoencoder on your own, run
 ```
-pip install polar[train]
+pip install polaregistration[train]
 ```
 
 If you want to use the interactive visualization function, run
 ```
-pip install polar[vis]
+pip install polaregistration[vis]
 ```
 
 Finally, to install everything, run
 ```
-pip install polar[all]
+pip install polaregistration[all]
 ```
-
 
 
 ## Minimal example
@@ -44,8 +45,6 @@ POLAR partially respects the [Scikit-Learn Estimator API](https://scikit-learn.o
 
 They take a list of PyTorch tensors (each of shape $(K_i, 3)$ if point clouds are of varying lengths) or a single batch tensor of shape
 $(N, K, 3)$ containing all the (same length) views.
-
-
 
 
 ## Documentation
